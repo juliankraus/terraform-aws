@@ -1,0 +1,13 @@
+# local .terraform dir
+.terraform/*
+
+# tf state files
+*.tfstate
+*.tfstate.*
+
+# tf variable files, may include sensitive data
+*.tfvars
+
+# additional files
+AWS_EC2_Architecture.pdf
+terraform_aws.code-workspace
