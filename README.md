@@ -146,3 +146,7 @@ To destroy all AWS resources created by this project:
 ```bash
 terraform destroy
 ```
+
+## 🙏 Credits / Acknowledgements
+
+This project was inspired by the **DevOps Bootcamp** by **[TechWorld with Nana](https://www.techworld-with-nana.com/devops-bootcamp)**.
