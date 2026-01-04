@@ -175,6 +175,16 @@ resource "aws_instance" "myapp-server" {
   associate_public_ip_address = true
   key_name = aws_key_pair.ssh-key.key_name
 
+  user_data = <<EOF
+                #!/bin/bash
+                sudo yum update -y && sudo yum install -y docker
+                sudo systemctl enable docker && sudo systemctl start docker
+                sudo usermod -aG docker ec2-user
+                docker run -p 8080:80 nginx
+              EOF
+
+  user_data_replace_on_change = true
+
   tags = {
     Name: "${var.env_prefix}-server"
   }
