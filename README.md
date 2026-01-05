@@ -80,6 +80,7 @@ my_ip               = "X.X.X.X/32"
 instance_type       = "t2.micro"
 ssh_key_name        = "server-key"
 public_key_location = "~/.ssh/<your_key>.pub"
+image_name          = "amzn2-ami-kernel-*-gp2"
 ```
 
 Notes:

@@ -11,3 +11,4 @@
 # additional files
 AWS_EC2_Architecture.pdf
 terraform_aws.code-workspace
+.DS_Store
