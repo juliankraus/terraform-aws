@@ -1,3 +1,13 @@
+terraform {
+  required_version = ">=1.5.7"
+  # Store terraform state in s3 bucket for consistency
+  backend "s3" {
+    bucket = "myapp-terraform-s3-bucket"
+    key = "myapp/state.tfstate"
+    region = "eu-central-1"
+  }
+}
+
 provider "aws" {
   region = "eu-central-1"
 }

@@ -89,6 +89,11 @@ Notes:
 
 ---
 
+## 🗄️ Terraform State Backend (S3)
+This repository uses a remote backend on Amazon S3 to store Terraform state centralized and consistent.
+
+---
+
 ## 🚀 Deployment
 
 ### 0. Configure AWS Authentication
