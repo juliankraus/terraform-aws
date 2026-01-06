@@ -5,6 +5,10 @@ terraform {
     bucket = "myapp-terraform-s3-bucket"
     key = "myapp/state.tfstate"
     region = "eu-central-1"
+    # Prevent simultaneous applys
+    use_lockfile = true
+    # Encrypt state and lock files server-side
+    encrypt = true
   }
 }
 
